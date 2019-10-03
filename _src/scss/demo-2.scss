@@ -1,0 +1,514 @@
+/*
+* Novu Theme
+* Created by : Ahmed Essa
+* website : www.ahmedessa.net
+*/
+
+
+/* DEMO-2
+==================================================
+    - Preloader -
+    - Header -
+	- Slider -
+    - three boxs section -
+    - About section -
+	- Portfolio section -
+    - Video lightbox section -
+    - Team section -
+    - blog section -
+    - Clients section -
+    - Contact section -
+    - Portfolio single page -
+    - Responsive media queries -
+
+*/
+
+
+/* Header
+==================================================*/
+
+#preloader {
+    background-color: #333;
+}
+
+.logo-circle {
+    background: #bdab44;
+}
+
+@-webkit-keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+@keyframes white-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(225, 225, 225, 0.3);
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: box-shadow 0.4s ease-in-out;
+        transition: box-shadow 0.4s ease-in-out;
+    }
+}
+
+
+/* Header
+==================================================*/
+
+.main-logo {
+    background: #bdab44;
+}
+
+
+/* Slider
+==================================================*/
+
+.slider-2 h2.sp-layer {
+    font-family: 'Museo300Regular', sans-serif;
+    font-size: 2.5em !important;
+    color: #444444;
+    /*text-transform: uppercase;*/
+}
+
+.slider-2 p.sp-layer.subtitle {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    white-space: normal !important;
+}
+
+.slider-2 .light-slider h2.sp-layer,
+.slider-2 .light-slider .slider-btn,
+.slider-2 .light-slider .slider-btn:hover {
+    color: #333333
+}
+
+.slider-2 .light-slider .slider-btn:after {
+    background-color: #fff;
+}
+
+.slider-2 {
+    text-align: center;
+}
+
+
+/* three boxs section
+==================================================*/
+
+#three-boxs .icon-box {
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+#three-boxs .icon-box h4 {
+    font-size: 22px;
+}
+
+.light-bg {
+    background: #fff;
+    color: #333
+}
+
+.gold-bg {
+    background: -webkit-linear-gradient( rgba(174, 137, 93, .7), rgba(174, 137, 93, .7)), url(http://placehold.it/1920x1280);
+    background: linear-gradient( rgba(174, 137, 93, .7), rgba(174, 137, 93, .7)), url(http://placehold.it/1920x1280);
+    background-size: cover;
+    color: #fff;
+}
+
+.gold-bg .default-btn,
+.dark-bg .default-btn {
+    color: #fff;
+}
+
+.gold-bg .default-btn:after,
+.dark-bg .default-btn:after {
+    background-color: #fff;
+}
+
+.light-bg .default-btn:after {
+    background-color: #333;
+}
+
+.dark-bg {
+    background: #333;
+    color: #f5f5f5
+}
+
+#three-boxs .subtitle {
+    color: #fff
+}
+
+.light-bg .subtitle {
+    color: #999 !important
+}
+
+
+/* About section
+==================================================*/
+
+.about-style-2 {
+    padding-top: 50px;
+}
+
+.h150 {
+    height: 150px;
+}
+
+
+/* Services section
+==================================================*/
+
+.box-border {
+    border: 1px solid #bdab44;
+    padding: 50px 30px;
+}
+
+.services-style-2 .icon-container {
+    padding: 20px;
+}
+
+.services-style-2 .icon-box i {
+    color: #bdab44;
+}
+
+#section-2.services-style-2 .bg-div-cover {
+    background: url(../img/capabilities.jpg);
+    background-size: cover;
+}
+
+
+/* Portfolio section
+==================================================*/
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover {
+    background-color: rgba(51, 51, 51, .9);
+}
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover .item_info span {
+    color: #fff;
+}
+
+.portfolio-style-2 .portfolio_item .portfolio_item_hover .item_info em {
+    background-color: #bdab44;
+}
+
+.portfolio-style-2 .portfolio-border {
+    border: 1px solid #bdab44;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.portfolio .categories-grid .categories ul li a.active {
+    background-color: #bdab44;
+}
+
+
+/* Video lightbox section
+==================================================*/
+
+.parallax-window {
+    position: relative;
+    min-height: 400px;
+    background: url(http://placehold.it/1920x1280);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.video-overlay {
+    background: rgba(174, 137, 93, .8);
+}
+
+.play-video {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.play-video i {
+    color: #fff;
+}
+
+.video-overlay .subtitle {
+    color: #fff !important;
+}
+
+
+/* Team section
+==================================================*/
+
+#section-4 {
+    background: #333;
+    color: #f5f5f5
+}
+
+.display-table {
+    display: table
+}
+
+.team-info-container {
+    padding: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.count-box {
+    float: left;
+    margin-right: 50px
+}
+
+.count {
+    font-family: 'bavroregular';
+    font-size: 35px;
+    display: block;
+    margin: 10px 0;
+}
+
+.count-box h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #bdab44
+}
+
+.team-style-2 .team-overlay {
+    background-color: rgba(51, 51, 51, .9);
+}
+
+.team-style-2 .team-overlay ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bdab44;
+    text-align: center;
+    line-height: 30px;
+    color: #bdab44;
+}
+
+.team-style-2 .team-overlay ul li a:hover {
+    opacity: .5;
+}
+
+
+/* blog section
+==================================================*/
+
+#section-5 {
+    padding-top: 50px;
+    background: #f5f5f5
+}
+
+.blog_item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.blog_item h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: inherit;
+    letter-spacing: 1px;
+}
+
+.blog-content {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+
+.blog-content .athour-img {
+    position: absolute;
+    width: 50px;
+    top: -30px
+}
+
+.blog-main-img {
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-img-container span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #bdab44;
+    border-radius: 25px;
+    z-index: 1;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.big-post .blog-img-container img {
+    border-radius: 5px;
+}
+
+.content-overlay {
+    position: absolute;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    bottom: -300px;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s
+}
+
+.big-post:hover .content-overlay {
+    bottom: 0px;
+}
+
+.big-post a:hover,
+.big-post a:focus {
+    color: #f5f5f5;
+}
+
+.blog-text {
+    margin: 50px;
+}
+
+.quote-post .blog-content {
+    border-radius: 5px;
+    color: #fff;
+    background: #bdab44;
+    padding: 0.25em;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-post .blog-content p {
+    font-style: italic;
+    font-size: 1.40em;
+    font-family: 'Lora', serif;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.quote-post .blog-content p::before {
+    content: '\201C';
+}
+
+.quote-post .blog-content p::after {
+    content: '\201D';
+}
+
+.quote-post .default-btn {
+    color: #fff;
+}
+
+.quote-post img {
+    margin-bottom: 20px;
+}
+
+.quote-post .default-btn:after {
+    background-color: #fff;
+}
+.blog-text .subtitle {
+    color: #999;
+}
+.blog_container p {
+    color: #999;
+}
+
+/* Clients section
+==================================================*/
+
+#section-6 {
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+    color: #f5f5f5;
+    padding: 30px 0;
+}
+
+
+/* Contact section
+==================================================*/
+
+#section-7 {
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(../img/bg2.jpg);
+    background: linear-gradient( rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 30px 0;
+}
+
+.mat-div::after {
+    background-color: #bdab44;
+}
+
+.is-active .mat-label {
+    color: #bdab44;
+}
+
+
+/* Portfolio single page
+==================================================*/
+
+.portfolio-hed-style-2 {
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(http://placehold.it/1920x1280);
+    background: linear-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(http://placehold.it/1920x1280);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 150px 20px;
+}
+
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 990px) {
+    .h150 {
+        display: none;
+    }
+    #section-3 {
+        padding-top: 50px;
+    }
+    #section-5 {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .slider-2 h2.sp-layer {
+        font-size: 2.5em !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .team-info-container {
+        padding: 10px;
+    }
+    .slider-2 h2.sp-layer,
+    .slider-2 p.sp-layer.subtitle {
+        width: auto !important;
+    }
+}
