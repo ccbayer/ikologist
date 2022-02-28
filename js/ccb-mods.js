@@ -50,15 +50,15 @@ $('form.password').on('submit', function(e) {
     var result = decipher.finish(); // check 'result' for true/false
     // outputs decrypted hex
     if(decipher.output.toHex() === hash) {
-        setWithExpiry("is-permitted", 'true', 1010100);
+        setWithExpiry('is-permitted', 'true', 86400);
         window.location.replace('home-page.html');
     }
 });
 
-$(window).on('load', function() {
+document.addEventListener('DOMContentLoaded', function(event) {
     var isPermitted = getWithExpiry('is-permitted');
     if(!isPermitted) {
-        if(window.location.href.substring(window.location.href.lastIndexOf('/')+1) != 'index.html') {
+        if(window.location.href.substring(window.location.href.lastIndexOf('/') + 1) != 'index.html') {
             window.location.replace('index.html');
         }
     }
