@@ -50,24 +50,16 @@ $('form.password').on('submit', function(e) {
     var result = decipher.finish(); // check 'result' for true/false
     // outputs decrypted hex
     if(decipher.output.toHex() === hash) {
-        console.log('you are allowed');
         setWithExpiry("is-permitted", 'true', 1010100);
-       // return;
         window.location.replace('home-page.html');
-    } else {
-        console.log('you are denied');
-        // localStorage.clear();
     }
 });
 
 $(window).on('load', function() {
     var isPermitted = getWithExpiry('is-permitted');
-    console.log(isPermitted);
-    return;
     if(!isPermitted) {
         if(window.location.href.substring(window.location.href.lastIndexOf('/')+1) != 'index.html') {
             window.location.replace('index.html');
         }
-      //  localStorage.clear();
     }
 });
