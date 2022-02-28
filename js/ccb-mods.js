@@ -61,5 +61,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
         if(window.location.href.substring(window.location.href.lastIndexOf('/') + 1) != 'index.html') {
             window.location.replace('index.html');
         }
+    } else {
+      // user is permitted and they returned to index, forward them to home 
+      if(window.location.href.substring(window.location.href.lastIndexOf('/') + 1) == 'index.html') {
+        window.location.replace('home-page.html');
+      }
     }
 });
