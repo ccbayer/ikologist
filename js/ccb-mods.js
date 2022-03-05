@@ -34,10 +34,15 @@ function getWithExpiry(key) {
 	return item.value
 }
 
-$('form.password').on('submit', function(e) {
+let $form = $('form.password');
+let $input = $form.find('input[type="password"]');
+let $invalid = $form.find('.invalid');
+
+$form.on('submit', function(e) {
     e.preventDefault();
-    $this = $(this);
-    value = $this.find('input[type="password"]').val();
+    var
+        value = $input.val()
+    ;
     cipher.start({iv: iv});
     cipher.update(forge.util.createBuffer(value));
     cipher.finish();
@@ -51,8 +56,17 @@ $('form.password').on('submit', function(e) {
     // outputs decrypted hex
     if(decipher.output.toHex() === hash) {
         setWithExpiry('is-permitted', 'true', 86400);
+        $input.attr('aria-invalid', 'false');
+        $invalid.hide();
         window.location.replace('home-page.html');
+    } else {
+        $invalid.show();
+        $input.attr('aria-invalid', 'true');
     }
+});
+
+$input.on('focus', function() {
+    $invalid.hide();
 });
 
 document.addEventListener('DOMContentLoaded', function(event) {
