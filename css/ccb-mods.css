@@ -2,8 +2,8 @@ form.password {
     padding: 1.5rem 0;
     text-align: center;
     background-color: rgba(0, 0, 0, .75);
-    margin: 0 auto;
-    max-width: 75%;
+    margin: 1rem auto;
+    max-width: 575px;
 }
 form.password label {
     display: block;
@@ -14,7 +14,6 @@ form.password fieldset {
     max-width: 300px;
     margin: 0 auto;
 }
-
 form.password input[type="password"] {
     display: block;
     font-size: 14px;
@@ -25,6 +24,10 @@ form.password button.default-btn {
     background-color: transparent;
     border: none;
     color: #fff;
+}
+
+form.password button.default-btn i.ion-ios-arrow-thin-right {
+    top: -7px;
 }
 
 form.password button.default-btn::after {
