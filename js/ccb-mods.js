@@ -57,7 +57,8 @@ $form.on('submit', function(e) {
     var result = decipher.finish(); // check 'result' for true/false
     // outputs decrypted hex
     if(decipher.output.toHex() === hash) {
-        setWithExpiry('is-permitted', 'true', 86400);
+        // setWithExpiry('is-permitted', 'true', 86400);
+        Cookies.set('is-permitted', true, { expires: 1 });
         $input.attr('aria-invalid', 'false');
         $invalid.hide();
         window.location.replace('home-page.html');
@@ -72,7 +73,8 @@ $input.on('focus', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function(event) {
-    var isPermitted = getWithExpiry('is-permitted');
+    // var isPermitted = getWithExpiry('is-permitted');
+    var isPermitted = Cookies.get('is-permitted');
     if(!isPermitted) {
         if(window.location.href.substring(window.location.href.lastIndexOf('/') + 1) != 'index.html') {
             window.location.replace('/index.html');
