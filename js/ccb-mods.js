@@ -17,7 +17,7 @@ function setWithExpiry(key, value, ttl) {
 }
 
 function getWithExpiry(key) {
-	const itemStr = localStorage.getItem(key)
+	const itemStr = localStorage.getItem(key);
 	// if the item doesn't exist, return null
 	if (!itemStr) {
 		return null;
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             window.location.replace('/index.html');
         }
     } else {
+      // extend session by 5m
       // user is permitted and they returned to index, forward them to home 
       if(window.location.href.substring(window.location.href.lastIndexOf('/') + 1) == 'index.html' || window.location.href === 'https://ikologist.com/') {
         window.location.replace('/home-page.html');
