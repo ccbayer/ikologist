@@ -75,3 +75,19 @@ h4 {
   cursor: default;           /* show default arrow cursor */
   text-decoration: none;
 }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sp-slide {
+  position: relative;
+  overflow: hidden;
+}
