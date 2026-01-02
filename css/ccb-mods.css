@@ -40,3 +40,106 @@ form.password .invalid {
     text-align: center;
     padding: 1rem 0;
 }
+
+/* Reusable section underline */
+.section-title {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: #d1b24c;
+  margin: 16px auto 0;
+}
+/* Fix underline alignment for INTRODUCTION */
+body.home-page #section-1 h3::after {
+  margin: 16px 0 0;   /* left-aligned */
+}
+
+/* --- HOME PAGE HERO --- */
+body.home-page .sp-slide.slide-1 {
+  background: url("../img/bg1.jpg") center center / cover no-repeat;
+}
+
+/* HOME PAGE ONLY: ensure logo + text show */
+body.home-page .sp-slide.slide-1 .sp-layer {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
+}
+
+
+
+/* =========================
+   CONTACT (section 7) – FINAL (NO FRAME)
+   ========================= */
+
+/* Force dark background and remove parallax behavior */
+body.home-page #section-7 {
+  background: #2b2b2b !important;
+  background-attachment: initial !important;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+/* Remove the white card look inside Contact */
+body.home-page #section-7 .w-bg {
+  background-color: transparent !important;
+}
+
+/* Headline */
+body.home-page #section-7 h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+/* Short thin divider under "CONTACT ME" (like About) */
+body.home-page #section-7 h3::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: #d1b24c; /* muted gold */
+  margin: 16px auto 0;      /* centered under heading */
+}
+
+/* Body copy */
+body.home-page #section-7 .padding-30 > p {
+  color: rgba(255, 255, 255, 0.92) !important;
+  opacity: 1 !important;
+}
+
+/* Contact lines */
+body.home-page #section-7 .subtitle {
+  color: rgba(255, 255, 255, 0.92) !important;
+  opacity: 1 !important;
+  margin-bottom: 12px;
+}
+
+/* Gold icons */
+body.home-page #section-7 .subtitle i {
+  color: #d1b24c !important;
+  opacity: 1 !important;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Email link */
+body.home-page #section-7 a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 178, 76, 0.45);
+}
+
+body.home-page #section-7 a:hover {
+  color: #d1b24c !important;
+  border-bottom-color: #d1b24c;
+}
